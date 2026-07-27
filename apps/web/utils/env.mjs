@@ -36,5 +36,7 @@ export const env = createEnv({
     SENDGRID_FROM: process.env.SENDGRID_FROM,
     SENDGRID_TO: process.env.SENDGRID_TO,
     RECAPTCHA_SECRET_KEY: process.env.RECAPTCHA_SECRET_KEY,
-  }
+  },
+  skipValidation: !!process.env.SKIP_ENV_VALIDATION,
+  emptyStringAsUndefined: true,
 });
