@@ -2,9 +2,9 @@
   "name": "template-monorepo",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
+    "build": "turbo run build --filter=@acme/web",
+    "dev": "turbo run dev --filter=@acme/web",
+    "lint": "turbo run lint --filter=@acme/web",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "FIXME": "manypkg check",
     "clean:workspaces": "turbo run clean",
