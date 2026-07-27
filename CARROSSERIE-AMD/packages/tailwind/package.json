@@ -1,0 +1,22 @@
+{
+  "name": "@acme/tailwind",
+  "version": "0.0.0",
+  "files": [
+    "index.js",
+    "postcss.js"
+  ],
+  "scripts": {
+    "clean": "rm -rf node_modules"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "@tailwindcss/container-queries": "^0.1.1"
+  }
+}
